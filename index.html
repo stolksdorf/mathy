@@ -1,0 +1,68 @@
+<html>
+<head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<link rel="Stylesheet" type="text/css" href="/style/index.css" />
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23904235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+	
+	<div id="title"> <span class="red">Re</span>Cognition:Math</div>
+	
+	<div id="center" > 
+		<div id="timer">TIME: 0.000  </div>
+		<div id="startContainer">
+			<div id="smallStart">CLICK HERE OR HIT ENTER TO</div>
+			<div id="startBox">START </div>
+		</div>
+		
+		<div id="instructionContainer"> 
+			<div id="instructionLeft">
+				<span style="line-height:150px;font-size:155px;">ANSWER</span> <br>
+				<span style="line-height:40px;font-size:60px;"><span class="red">25</span> MATHY QUESTIONS</span>
+			</div>
+			
+			<div id="countDown">3</div>
+			
+			<div id="instructionRight">
+				<span style="line-height:55x;font-size:53px;">
+					AS <span class="red">FASTY</span> AND <span class="red">CORRECTY</span> AS
+				</span> <br>
+
+				<span style="line-height:130px;font-size:160px;">POSSIBLE</span>
+			</div>
+		</div>
+		
+		<div id="questionContainer">
+			<div id="qNum"></div>
+			<div id="questionBox">
+				<span id="question"></span>			
+				<input id="answer" type="text" name="text" autocomplete="off" > </input>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div id="resultBox">
+		<div id="resultTable"></div>
+		<div id="againButton" style="float:right" onClick="window.location.reload()">AGAIN?</div>
+	</div>
+	
+</body>
+</html>
